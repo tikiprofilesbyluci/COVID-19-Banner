@@ -2,7 +2,7 @@ objects:
  -
   type: module
   data:
-   name: COVID-19 Banner 0.1dev
+   name: COVID-19 Banner 0.1
    groups: [ Admins ]
    position: bottom
    order: 999
@@ -26,9 +26,9 @@ objects:
     if (getCookie('covid19-banner') != 'hidden') {
       $('.covid19-banner').removeClass('hidden').hide().delay('500').fadeIn('slow');
     }
-    $('.custom-close').on('click', function(event) {
+    $('.covid19-close').on('click', function(event) {
      event.preventDefault();
      $('.covid19-banner').fadeOut('slow');
      setCookie("covid19-banner","hidden");
     });
-    {/literal}{/jq}<div class="alert alert-danger covid19-banner hidden"><p><strong>Due to the COVID-19 pandemic situation, we are ...</strong></p> <a class="btn btn-danger custom-close" href="#">Close</a></div>
+    {/literal}{/jq}<div class="alert alert-danger covid19-banner hidden"><p><strong>Due to the COVID-19 pandemic situation, we are ...</strong></p> <a class="btn btn-danger covid19-close" href="#">Close</a></div>
