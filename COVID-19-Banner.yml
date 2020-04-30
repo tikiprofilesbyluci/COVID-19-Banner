@@ -1,0 +1,34 @@
+objects:
+ -
+  type: module
+  data:
+   name: COVID-19 Banner 0.1dev
+   groups: [ Admins ]
+   position: bottom
+   order: 999
+   params:
+    nobox: y
+   custom: |
+    <style type="text/css">{literal}
+    .covid19-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    z-index: 999;
+    }
+    .hidden {display: none}
+    {/literal}</style>{jq}{literal}
+    if (getCookie('covid19-banner') != 'hidden') {
+      $('.covid19-banner').removeClass('hidden').hide().delay('500').fadeIn('slow');
+    }
+    $('.custom-close').on('click', function(event) {
+     event.preventDefault();
+     $('.covid19-banner').fadeOut('slow');
+     setCookie("covid19-banner","hidden");
+    });
+    {/literal}{/jq}<div class="alert alert-danger covid19-banner hidden"><p><strong>Due to the COVID-19 pandemic situation, we are ...</strong></p> <a class="btn btn-danger custom-close" href="#">Close</a></div>
