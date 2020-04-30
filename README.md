@@ -1,5 +1,5 @@
-# COVID-19-Banner
-COVID-19 Banner creates and assigns a custom module featuring a custom banner where you can put information related to your community or business affected by the Wuhan (China) originated coronavirus 2020 pandemic.
+# COVID-19 Banner
+COVID-19 Banner profile for Tiki creates and assigns a custom module to your site featuring customizable "banner" where you can put information related to your community or business affected by the Wuhan (China) originated coronavirus 2020 pandemic.
 
 ## Download
 Get the released package from the Releases on Github (https://github.com/tikiprofilesbyluci/COVID-19-Banner).
