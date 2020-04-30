@@ -11,6 +11,9 @@ You will need an access to your command line on your localhost or via SSH on the
 
 Alternatively (if you prefer GUI or have no command line access) you can install it directly from your Tiki by adding the profiles.luciash.eu profiles repository to your Profiles control panel.
 
+## Screenshots
+![Screenshot](./COVID-19%20Banner.png)
+
 ## Usage
 This profile creates a custom module with a "COVID-19 Banner" in it.
 The module will be assigned to the _bottom_ modules zone but the banner will appear on fixed position on the top of your website.
